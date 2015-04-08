@@ -11,6 +11,9 @@ public class Sample1Test {
         GatewayConfig1 gc = new GatewayConfig1()
         .echoService()
             .accept(URI.create("http://someuri1:80"))
+            .type("sometype")
+        // type hides accept
+        // .accept(URI.create("http://someuri1:80"))
             .done()
         .echoService()
             .accept(URI.create("http://someuri2:80"))

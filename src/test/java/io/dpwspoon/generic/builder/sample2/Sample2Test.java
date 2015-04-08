@@ -8,7 +8,7 @@ public class Sample2Test {
     public void test(){
         GatewayConfig2 gc = new GatewayConfig2()
         .service("echo")
-            // no accept binding
+            // no accept binding though you could cast it here and it would work
 //            .accept(URI.create("http://someuri1:80"))
             .done()
         .service("echo")
