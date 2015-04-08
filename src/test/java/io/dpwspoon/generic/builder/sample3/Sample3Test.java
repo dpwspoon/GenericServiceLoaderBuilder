@@ -16,9 +16,9 @@ public class Sample3Test {
 //           .accept(URI.create("http://someuri1:80"))
         .done()
         // can't add more services here because type object is returned ....
-//        .service(EchoServiceConfig3.class)
-//            .accept(URI.create("http://someuri2:80"))
-//            .accept(URI.create("http://someuri3:80"))
-//        .done();
+        .service(EchoServiceConfig3.class)
+            .accept(URI.create("http://someuri2:80"))
+            .accept(URI.create("http://someuri3:80"))
+        .done();
     }
 }
